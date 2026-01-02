@@ -1,6 +1,10 @@
 
 02-01-2026 Notes:
 
+Session 1 Notes :
+
+- Concepts : Database, Caching, Scaling, Delegation, Concurrency, Communication
+
 - Design an offline/online indicator , Design a multi user blogging platform
 
 - Schema ( User-id, Status )
