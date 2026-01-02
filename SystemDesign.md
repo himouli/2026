@@ -26,4 +26,20 @@ Session 1 Notes :
 
 - Redis vs DynamoDB - Depends on speed, scale, open source, vendor lock-in
 
-- 
+- Number of API requests to update heartbeat ---1 million Users - 10 s update - 6 updates / minutes - 6 million updates / minute
+
+- Concept of Connection Pooling :
+   - Instead of opening a individual connection to the DB at every request, we maintain a pool of connections
+     in a bounded queue. If the queue is empty the requests wait, else pick the connection object, satisfy the
+     request and respond back.
+  - Avoid Database connection bottlenecks at scale
+  - TCP connection
+
+ Caching as a technique rather an as something that is stored in RAM
+ 
+ - Concept of Debouncing :
+   - When there are multiple requests to the cache at the same time, one goes to DB, others wait ( reduces disk i/o, cpu computation)
+
+ - Concept of Load leak:
+   - Even when there is a cache hit, leak some load on the DB 
+  
