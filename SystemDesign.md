@@ -41,5 +41,19 @@ Session 1 Notes :
    - When there are multiple requests to the cache at the same time, one goes to DB, others wait ( reduces disk i/o, cpu computation)
 
  - Concept of Load leak:
-   - Even when there is a cache hit, leak some load on the DB 
+   - Even when there is a cache hit, leak some load on the DB
+  
+Session 2 Notes :
+
+- Caching at various different places - RAM, DISK
+  At Browser, CDN, LB , API Server, Database
+
+- Scaling - Always think Bottom Up
+-  Database -  Vertical Scaling, Horizontal Scaling - Read Replicas, Sharding
+-  Routing requests when you replicas , shard need knowledge of the Database topology
+-  Abstract it from the Api Server using RDS Proxy, Proxy SQL ( topology discovery , changes are offloaded to the proxy which maintainis
+  the connection objects to the DB )
+
+
+  
   
