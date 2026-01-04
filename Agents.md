@@ -72,5 +72,53 @@ Agentic AI frameworks
   System Prompt : Overall instruction to set the context
   User Prompt : Actual question from user
 
+ * Vibe Coding Best Practices
+   - Good Vibes - Prompt Well - Ask for short answers and latest APIs for todays data
+   - Vibe but verify -- Ask 2 LLMs the same question
+   - Step up the vibe --ask to break down your request into independently testable steps
+   - Vibe and Validate - ask an LLM then get another LLM to check
+   - Vibe with Variety - ask for 3 solutions to the same problem, pick the best
+  
+  Week 3 
+
+  Crew AI - Enterprise, UI studio, OpenSource Framework
+  Crew AI Crews - Autonomous solutions with AI teams of Agents with diff roles
+  Crew AI Flows - Structured automations by dividing complex tasks into precise workflows
+
+  Agent - Unit with an LLM, a role, a goal, a backstory, memory, tools
+  Task - a specific assignment to be carried out
+  Crew - a team of agents and tasks
+  YAML configuration - @agent @tasks @crew
+
+
+  Week 4 
+     Langgraph - Langraph studio Langgraph Platform
+     Agent workflows represented as graphs
+     State represents the current snapshot of the application
+     Nodes : are python functions that represent agent logic
+     Edges : python functions that determine what Node to execute next based on state, they can be conditional or fixed
+     Nodes do the work, edges choose what to do next
+
+  5 steps to building the Graph 
+    1. Define the state class
+    2. Start the Graph Builder
+    3. Create a Node
+    4. Create the Edges
+    5. Compile the Graph
+
+
+    Week 6 : MCP
+        1. A framework for  building agents
+        2. A fundamental change to how agents work 
+        3. A way to code agents
+        4. Protocol - a standard
+        5. A simple way to integrate tools, resources, prompts
+
+    Host : 
+    MCP Client 
+    MCP Server 
+    MCP Client ---stdio --- MCP Server [ Local ]
+    MCP Client --- SSE --- MCP Server [ Remote ]
+    
   
    
